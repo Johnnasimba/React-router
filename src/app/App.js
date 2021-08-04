@@ -17,12 +17,13 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <Route>
-        <Header />
-      </Route>
+      <Header />
 
       <Route path='/about'>
         <About />
+      </Route>
+      <Route path='/sign-up'>
+        <SignUp />
       </Route>
       <Route path='/articles'>
         <Articles />
@@ -30,11 +31,14 @@ function App() {
       <Route path='/categories'>
         <Categories />
       </Route>
-
-
-      <Route>
-        <Footer />
+      <Route path='/profile'>
+        <Profile />
       </Route>
+
+
+
+    <Footer />
+
     </Router>
   );
 }
