@@ -9,17 +9,33 @@ import Categories from "../components/Categories";
 import Author from "../components/Author";
 import Profile from "../components/Profile";
 
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import "./App.css";
+
 
 function App() {
   return (
-    <div>
-      <Header />
-      <main>
-        {/* Add Routes here! */}
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Route>
+        <Header />
+      </Route>
+
+      <Route path='/about'>
+        <About />
+      </Route>
+      <Route path='/articles'>
+        <Articles />
+      </Route>
+      <Route path='/categories'>
+        <Categories />
+      </Route>
+
+
+      <Route>
+        <Footer />
+      </Route>
+    </Router>
   );
 }
 
