@@ -28,6 +28,12 @@ function App() {
       <Route path='/articles'>
         <Articles />
       </Route>
+      <Route path='/articles/:title'>
+        <Article />
+      </Route>
+      <Route path='/authors/:name'>
+        <Author />
+      </Route>
       <Route path='/categories'>
         <Categories />
       </Route>
