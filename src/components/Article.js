@@ -10,14 +10,18 @@ export default function Article () {
   const article = articles[title]
 
   return article ? (
-    <div className='article-container'>
-      <h1 className='article-title'>{article.title}</h1>
-      <p>By <Link to={`/authors/${article.author}`}>
-        {article.author}
-      </Link></p>
-      <ReactMarkdown>
-        {article.body}
-      </ReactMarkdown>
-    </div>
+    <main>
+         <div className='article-container'>
+        <h1 className='article-title'>{article.title}</h1>
+        <p>By <Link to={`/authors/${article.author}`}>
+          {article.author}
+        </Link></p>
+        <ReactMarkdown>
+          {article.body}
+        </ReactMarkdown>
+      </div>
+    </main>
+
+   
   ) : <p> No article found with that title... </p>
 }

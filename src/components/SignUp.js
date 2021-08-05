@@ -16,7 +16,7 @@ const history = useHistory();
   }
 
   return (
-    <section>
+    <main>
       <h1>Sign Up</h1>
       <form onSubmit={handleSubmit}>
         <label>
@@ -33,6 +33,6 @@ const history = useHistory();
           </div>
         </label>
       </form>
-    </section>
+    </main>
   );
 }
